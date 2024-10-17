@@ -13,9 +13,8 @@ module load miniconda3
 conda activate /hb/home/dsalih/env/conda_dalya
 module load bedtools
 
-# Run bedtools command
-bedtools bamtobed \ 
--split \
--i /hb/groups/bme110/fall2024/problemSet1/MCF_10_2D_SRSF1_chr17_portion.bam \
-> ~/bedtools_dir/MCF_10_2D_SRSF1_chr17_portion.split.bed
-
+# Run bedtools command with split option
+bedtools bamtobed \
+  -split \
+  -i /hb/groups/bme110/fall2024/problemSet1/MCF_10_2D_SRSF1_chr17_portion.bam \
+  > /hb/home/dsalih/bedtools_dir/MCF_10_2D_SRSF1_chr17_portion.split.bed
