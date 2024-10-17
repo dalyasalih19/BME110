@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=bedtools
+#SBATCH --job-name=bedtools_split
 #SBATCH --time=01:00:00  
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=dsalih@ucsc.edu
-#SBATCH --output=bedtools_%A_%a.out
-#SBATCH --error=bedtools_%A_%a.err
-#SBATCH --cpus-per-task=1
+#SBATCH --output=bedtools_split_%A_%a.out
+#SBATCH --error=bedtools_split_%A_%a.err
+#SBATCH --cpus-per-task=2
 #SBATCH --mem=16GB
 #SBATCH --partition=128x24   
 
